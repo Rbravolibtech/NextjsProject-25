@@ -1,10 +1,17 @@
-// our-domain.com/news-something-important
+import Link from "next/link"
+import { Fragment } from "react"
 
 
 
 
 function NewsPage() {
-    return <h1>THE HOME PAGE</h1>
+<Fragment>
+    return <h1>THE NEWS PAGE</h1>
+    <ul>
+       <li><Link href="/new/nextjs-is-a-great-framework">NEXT JS IS A GREAT FRAMEWORK</Link></li> 
+    <li>SOMETHING ELSE</li>
+    </ul>
+    </Fragment>
     }
     
     export default NewsPage
